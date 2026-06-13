@@ -1,0 +1,17 @@
+.box{
+    background-color: coral;
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    padding: 20px;
+    margin-left: 50%;
+
+}
+
+.box2{
+    background-color: blueviolet;
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    padding: 20px;
+}

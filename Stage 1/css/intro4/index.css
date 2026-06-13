@@ -1,0 +1,65 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.container {
+  border: 1px solid black;
+  background-color: rgb(229, 238, 238);
+  /* width: 1600px;x   */
+  margin: 20px auto;
+}
+
+.head,
+.text {
+  padding: 20px;
+}
+
+.box {
+  width: 250px;
+  border: 2px solid rgb(29, 192, 73);
+  margin: 74px;
+  border-radius: 10px;
+  position: relative;
+  text-align: center;
+}
+
+.disscount {
+  position: absolute;
+  top: 16px;
+  right: 18px;
+  background-color: red;
+  color: white;
+  padding: 6px;
+  border-radius: 20px;
+}
+.content {
+  padding: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.content h3 {
+  color: red;
+}
+
+.box .box-image {
+  width: 100%;
+  height: 150px;
+  padding: 10px;
+}
+
+.box-1 {
+  float: left;
+}
+.box-2 {
+  float: left;
+}
+
+.box-3 {
+  float: left;
+}
+
+.box-4 {
+  float: left;
+}

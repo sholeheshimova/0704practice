@@ -1,0 +1,10 @@
+:root{
+    /* Colors */
+    --bgc-color: #141414;
+    --input-border-color: #C6D1DC;
+    --primary-color: #E50914;
+
+
+    /* Fonts */
+    --inter-font: "Inter", sans-serif;
+}

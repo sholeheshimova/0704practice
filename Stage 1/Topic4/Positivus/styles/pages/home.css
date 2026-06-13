@@ -1,0 +1,265 @@
+@import url("../global/general.css");
+
+.header{
+    height: 68px;
+    padding: 100px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 206px;
+    margin-bottom: 70px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+.logo-title{
+    font-family: var(--font-space);
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.nav-list{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.nav-link{
+    color: var(--black-color);
+    font-size: 20px;
+
+}
+
+.btn{
+    padding: 20px 35px;
+    border-radius: 14px;
+
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-btn{
+  background-color: transparent;
+}
+
+
+.hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px;
+    margin-bottom: 70px;
+}
+
+.hero-information{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 35px;
+    width: 531px;
+}
+
+.hero-title{
+    font-size: 60px;
+    line-height: 80px;
+    color: var(--black-color);
+}
+
+.hero-parag{
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.hero-btn{
+    background-color: var(--black-color);
+    color: white;
+}
+.hero-view{
+    width: 600px;
+}
+
+.brands{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 100px;
+    height: 48px;
+    margin-bottom: 100px;
+}
+
+
+
+
+
+
+.footer{
+    padding: 0 100px;
+}
+
+.footer-container{
+    /* height: 514px; */
+    display: flex;
+    flex-direction: column;
+    gap: 66px;
+    padding: 55px 60px 50px 60px;
+    background-color: #191A23;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+
+.footer-head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-title{
+    font-size: 28px;
+    font-weight: 600;
+    color: white;
+}
+.footer-list{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+.footer-link{
+   font-size: 18px;
+   color: white;
+}
+
+.footer-icons{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-contact{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 154px;
+}
+
+.contact-us{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+}
+
+.contact-us p{
+    color: white;
+    font-size: 18px;
+}
+.contact-us-btn{
+    width: 126px;
+    height: 26px;
+    background-color: var(--main-color);
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+.footer-inputs{
+    background-color: #292A32;
+    padding: 58px 40px;
+    border-radius: 14px;
+    width: 50%;
+
+    display: flex;
+    gap: 20px;
+}
+
+.email{
+    padding: 22px 35px;
+    width: 50%;
+    height: 67px;
+    border-radius: 14px;
+    background-color: transparent;
+    border: 1px solid white;
+    font-size: 20px;
+    color: white;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+.subscribe{
+    width: 50%;
+    height: 68px;
+    padding: 20px 35px;
+    border-radius: 14px;
+    background-color: var(--main-color);
+    color: var(--black-color);
+    font-size: 20px;
+}
+
+
+
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.fa-bars{
+    display: none;
+    font-size: 50px;
+}
+
+ 
+@media screen and (max-width: 1200px) {
+    .container{
+        width: 800px;
+    }
+
+   
+}
+
+@media screen and (max-width: 800px){
+    .container{
+        width: 100%;
+
+    }
+    .fa-bars{
+        display: block;
+    }
+    .nav-list{
+        display: none;
+    }
+     .hero{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .hero-view{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .hero-title{
+        text-align: center;
+    }
+    .hero-parag{
+        text-align: center;
+    }
+    .hero-btn{
+        margin: 0 auto;
+    }
+
+   
+}

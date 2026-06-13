@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+/* Task 1 */
+
+/* .container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.box-1{
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+}
+.box-2{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(222, 155, 23);
+}
+.box-3{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(235, 27, 203);
+} */
+
+/* Task 2 */
+
+/* .container{
+    width: 600px;
+    height: 700px;
+    background-color: bisque;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.box{
+    width: 200px;
+    height:200px;
+    border: 3px solid rgb(228, 14, 14);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+/* Task3 */
+/* 
+.header {
+  background-color: burlywood;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+.logo {
+  font-size: 26px;
+  color: green;
+}
+.nav ul {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.nav a {
+  font-size: 24px;
+  color: rgb(12, 118, 15);
+}
+.header-btn :nth-child(1) {
+  padding: 20px;
+  border-radius: 10px;
+  background-color: green;
+  color: white;
+  font-size: 20px;
+} */
+
+
+/* Task4 */
+
+
+.container{
+    background-color: cornflowerblue;
+    width: 600px;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card{
+    width: 200px;
+    height: 200px;
+    border: 2px solid red;
+}

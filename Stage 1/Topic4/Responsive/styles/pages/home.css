@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.paragraph{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    margin: 30px auto;
+
+}
+
+.title{
+    color: green;
+    font-size: 40px;
+}
+.picture{
+    text-align: center;
+}
+
+.information p{
+    text-align: center;
+    font-size: 20px;
+}
+.main-title{
+    font-size: 60px;
+    color: green;
+}
+
+.page-image {
+    display: none;
+    /* visibility: hidden; */
+}
+.second-image{
+    display: none;
+}
+
+@media screen  and (max-width:800px) {
+    .information{
+        display: none;
+    }
+    .main-content h2{
+        color: red;
+    }
+    .page-image{
+        display: block;
+    }
+
+    .paragraph{
+        background-color: bisque;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    .second-image{
+        display: block;
+    }
+    .page-image{
+        display: none;
+    }
+    .paragraph{
+        background-color: aqua;
+    }
+}

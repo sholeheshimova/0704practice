@@ -1,0 +1,105 @@
+@import url("../global/general.css");
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 202px;
+}
+
+.card {
+  margin: 60px 0;
+  width: 502px;
+  height: 755px;
+  border-radius: 16px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--bgc-color);
+}
+
+.card-form {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+}
+
+.card-form label {
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.card-form input {
+  width: 422px;
+  height: 56px;
+  border-radius: 8px;
+  border: 1px solid var(--input-border-color);
+  padding: 16px;
+  margin-bottom: 24px;
+}
+
+.login-btn {
+  width: 422px;
+  height: 48px;
+  border-radius: 8px;
+  padding: 16px;
+  background-color: var(--primary-color);
+  color: white;
+  font-weight: 600px;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-paragraph {
+  text-align: center;
+  color: white;
+  font-weight: 600;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.login {
+  width: 199px;
+  height: 48px;
+  border-radius: 8px;
+  padding: 16px;
+  background-color: #343333;
+
+  font-weight: 600;
+  color: white;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+}
+
+.sign {
+  width: 199px;
+  height: 48px;
+  border: 1px solid var(--primary-color);
+  border-radius: 8px;
+  padding: 16px;
+  background-color: black;
+
+  font-weight: 600;
+  color: var(--primary-color);
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

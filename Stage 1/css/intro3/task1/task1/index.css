@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    /* margin: 10px; */
+    width: 50%;
+    border: 2px solid black;
+    margin: 0 auto;
+    border-radius: 16px;
+    background-color: rgb(118, 117, 116);
+}
+
+.box{
+    /* width: 400px;
+     */
+    height: 200px;
+    border: 2px solid black;
+    margin: 10px;
+    background-color: azure;
+}
+
+.date{
+    float: left;
+    width: 200px;
+    height: 200px;
+    padding: 50px;
+    background-color: black;
+    color: white;
+}
+
+.date h2{
+    font-size: 46px;
+}
+.date p{
+    font-size: 30px;
+}
+
+.content{
+    margin-left: 220px;
+    padding: 20px 20px 20px 0;
+}
+.btn{
+    margin: 10px 10px 10px 0;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 600;
+
+}
+
+ 

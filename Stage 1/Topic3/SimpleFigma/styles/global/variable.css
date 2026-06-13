@@ -1,0 +1,11 @@
+:root{
+    /* Colors */
+    --main-color: #D79CCB;
+    --text-color: #1A202C;
+    --btn-color: #E5E5EA;
+    --border-color: #B8B8B8;
+
+    /* Fonts */
+    --font-roboto: "Roboto", sans-serif;
+    --font-poppins: "Poppins", sans-serif;
+}

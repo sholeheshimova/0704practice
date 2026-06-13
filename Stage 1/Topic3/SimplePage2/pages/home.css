@@ -1,0 +1,266 @@
+@import url("../styles/global/general.css");
+
+.header {
+  background-color: var(--main-color);
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 65px;
+  border: 1px solid var(--border-color);
+}
+
+.heading-title {
+  font-family: var(--font-jakarta);
+  font-weight: 600;
+  font-size: 32px;
+  letter-spacing: -3%;
+  color: var(--text-color);
+}
+
+.navbar {
+  /* width: 794px; */
+  /* height: 38px; */
+
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+  align-items: center;
+}
+
+.nav-list {
+  display: flex;
+  gap: 38px;
+}
+
+.nav-link {
+  color: white;
+  font-family: var(--font-jakarta);
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.nav-link:hover {
+  color: var(--text-color);
+  transition: all 0.7s ease;
+}
+
+.nav-item:last-child .nav-link {
+  border-right: 1px solid white;
+  padding-right: 38px;
+}
+
+.header-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 16px;
+}
+
+.btn {
+  background-color: white;
+  width: 82px;
+  height: 38px;
+  border-radius: 4px;
+
+  font-family: var(--font-jakarta);
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: -3%;
+  border: none;
+  color: var(--text-color);
+}
+
+.rent {
+  background-color: var(--main-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 72px;
+}
+
+.rent-content {
+  /* width: 50%; */
+  width: 575px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 38px;
+
+  margin-top: 152px;
+  margin-left: 64px;
+}
+
+.paragraph {
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--text-color);
+}
+.rent-heading {
+  font-weight: 800;
+  font-size: 46px;
+  line-height: 121%;
+  text-transform: uppercase;
+}
+.rent-paragraph {
+  opacity: 45%;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 160%;
+  letter-spacing: -2%;
+}
+
+.rent-actions {
+  display: flex;
+  gap: 32px;
+}
+.bokking-btn {
+  width: 150px;
+  height: 44px;
+  border-radius: 4px;
+  padding: 0 20px;
+  background-color: white;
+  border: none;
+  letter-spacing: -2%;
+
+  color: var(--text-color);
+  font-weight: 600;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bokking-btn:hover {
+  opacity: 80%;
+  transition: all 0.7s ease;
+}
+.see-btn {
+  background-color: transparent;
+  border: none;
+  font-weight: 600;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: -2%;
+  color: var(--text-color);
+}
+
+.rent-image {
+  background-color: var(--hero-img-color);
+  width: 729px;
+  height: 656px;
+  border-top-left-radius: 63px;
+  margin-top: 77px;
+}
+
+.rent-image img {
+  width: 348px;
+  height: 348px;
+  margin-top: 61px;
+  margin-left: 168px;
+}
+
+.chosse-information {
+  text-align: center;
+  margin-top: 84px;
+}
+
+.choose-title {
+  font-weight: 500;
+  font-size: 48px;
+  letter-spacing: -2%;
+  padding: 18px;
+}
+
+.choose-paragraph {
+  width: 530px;
+  height: 67px;
+  margin: 0 auto;
+
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: var(--text-color);
+}
+
+.choose-view {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 215px;
+  padding: 76px;
+}
+
+.choose-image {
+  width: 566px;
+  height: 528px;
+  background-color: var(--second-img-color);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.choose-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.customer,
+.price,
+.location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+.customer-icon {
+  background-color: var(--icon-bgc);
+  padding: 9px 12px;
+  border-radius: 10px;
+}
+
+.customer-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 6px;
+}
+.content-head {
+  font-weight: 600;
+  font-size: 22px;
+  letter-spacing: -2%;
+  color: var(--text-color);
+  line-height: 150%;
+}
+.content-paragraph {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 175%;
+  letter-spacing: -2%;
+  color: var(--text-color);
+  width: 430px;
+}
+
+.price-icon {
+  background-color: var(--icon-bgc);
+  padding: 17px 15px;
+  border-radius: 10px;
+}
+
+.location-icon {
+  background-color: var(--icon-bgc);
+  /* padding: 17px 15px; */
+  border-radius: 10px;
+  width: 51px;
+  height: 51px;
+}

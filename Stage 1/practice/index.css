@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    background-color: red;
+    height: 100px;
+    width: 100%;
+   
+    padding: 20px; 
+}
+
+.logo{
+     height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo button{
+    padding: 20px 35px;
+    background-color: bisque;
+    border-radius: 10px;
+    border: none;
+
+    font-size: 20px;
+}
+
+
+.content{
+    background-color: rgb(21, 196, 216);
+}
+
+
+.container{
+    width: 1200px;
+    min-height: 100vh;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 1200px) {
+   .container{
+      width: 800px;
+   } 
+}
+
+@media screen and (max-width: 800px) {
+   .contaier{
+      width: 100%;
+   } 
+}

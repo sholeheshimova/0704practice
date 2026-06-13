@@ -1,0 +1,155 @@
+@import url("../styles/global/general.css");
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 28px;
+    align-items: center;
+    height: 100px;
+    background-color: var(--main-color);
+    border: 1px solid var(--border-color);
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo-title{
+    font-family: var(--font-roboto);
+    font-weight: 600;
+    font-size: 32px;
+    color: var(--text-color);
+}
+
+.navbar{
+    display: flex;
+    gap: 78px;
+    align-items: center;
+}
+
+.nav-list{
+    display: flex;
+    gap: 38px;
+}
+
+.nav-link{
+    font-weight: 500;
+    font-size: 16px;
+    color: white;
+}
+
+.btn{
+    width: 82px;
+    height: 38px;
+    background-color: var(--btn-color);
+    color: var(--text-color);
+    border: none;
+    border-radius: 4px;
+
+}
+
+.rent{
+    height: 733px;
+    background-color: var(--main-color);
+    margin: 0 auto; 
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-content{
+    height: 250px;
+    width: 846px;
+    /* border: 1px solid black; */
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    
+}
+
+.rent-heading{
+    font-family: var(--font-poppins);
+    font-weight: 600;
+    font-size: 46px;
+    color: var(--text-color);
+}
+
+.rent-paragraph{
+    width: 534px;
+    height: 78px;
+    opacity: 45%;
+
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--text-color);
+    line-height: 160%;
+}
+
+.rent-btn{
+    width: 150px;
+    height: 44px;
+    border-radius: 4px;
+    border: none;
+
+    background-color: white;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 51px;
+
+    height: 833px;
+    
+}
+
+.about-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 33px;
+    
+    
+    width: 530px;
+}
+
+.about-heading{
+    font-family: var(--font-roboto);
+    font-weight: 500;
+    font-size: 48px;
+    letter-spacing: -2%;
+}
+
+.about-paragraph{
+     font-family: var(--font-roboto);
+     font-weight: 400;
+     font-size: 18px;
+     line-height: 150%;
+     color: var(--text-color);
+
+}
+
+
+.about-view{
+    background-color: var(--main-color);
+    width: 348px;
+    height: 348px;
+
+}
+
+.about-image{
+    width: 100%;
+}

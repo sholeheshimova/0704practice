@@ -1,0 +1,16 @@
+.parag p:first-child {
+  color: blue;
+}
+
+input:focus {
+  background-color: aquamarine;
+}
+
+li:nth-child(odd) {
+  background-color: yellow;
+}
+
+li:nth-child(even) {
+  background-color: rgb(13, 181, 147);
+}
+
