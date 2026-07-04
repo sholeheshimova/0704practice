@@ -106,3 +106,50 @@ function findLongestWord(longText) {
 }
 findLongestWord("I love frontend development")
 
+
+
+// 04.07.2026
+
+//task6  Neçə cüt ədəd olduğunu qaytarsın.
+function countEven(evenArr) {
+    let count = 0;
+    for (let i = 0; i < evenArr.length; i++) {
+
+        if (evenArr[i] % 2 == 0 ) {
+            count++;
+        }
+    }
+    return count;
+}
+
+let result = countEven([2,5,8,9,10]);
+console.log(result);
+
+
+
+//task7  Array-dəki tək ədədlərin cəmini qaytarsın.
+
+function sumOdd(oddArr) {
+    let sum = 0;
+    for (let i = 0; i < oddArr.length; i++) {
+        if (oddArr[i] % 2 == 1) {
+            sum = sum + oddArr[i]
+        }
+    }
+    return sum;
+}
+
+let resultOddSum = sumOdd([2,5,8,9,10])
+console.log(resultOddSum);
+
+
+
+//task8 
+
+
+
+
+
+
+
+
