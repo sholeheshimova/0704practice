@@ -1,61 +1,70 @@
 //task1
-let count = 0;
-let sait = "ai";
 
-function countVowels(str) {
-  for (let i = 0; i < str.length; i++) {
-    // console.log(str[i]);
+function countVowels(vowelsStr) {
+  let count = 0;
+  let vowels = "aioue";
 
-    if (sait.includes(str[i])) {
-      count++;
+  for (let i = 0; i < vowelsStr.length; i++) {
+    if (vowels.includes(vowelsStr[i])) {
+      count++
     }
   }
-  console.log(count);
+  return count
 }
+console.log(countVowels("javascript"));
 
-countVowels("javascript");
+
+
 
 //task2
 
-function printevens(num) {
+function printEvens(num) {
   for (let i = 1; i <= num; i++) {
-    if (i % 2 == 0) {
+    if (i % 2 === 0) {
       console.log(i);
+      
     }
   }
 }
+console.log(printEvens(12));
 
-printevens(10);
+
 
 //task3
 
-function sumDigits(number) {
-  let sum = 0;
-  let numberStr = number.toString();
-  for (let i = 0; i < numberStr.length; i++) {
-    sum += Number(numberStr[i]);
-  }
 
+function sumDigits(digitNum) {
+  let sum = 0;
+  let numToStr = digitNum.toString();
+
+  for (let i = 0; i < numToStr.length; i++) {
+    sum += Number(numToStr[i])
+  }
   return sum;
 }
+console.log(sumDigits(1234));
 
-console.log(sumDigits(123));
+
+
 
 
 //EV TAPSIRIGI
 
 //task4
-let multiNumber = 3;
-function multiplicationTable(nums) {
-  for (let i = 1; i <= 10; i++) {
-    // console.log(i);
-    let multi = multiNumber * i;
-    let totalMulti = `${multiNumber} x ${i} = ${multi}`;
-    console.log(totalMulti);
-  }
-}
 
-multiplicationTable(3);
+function multiplicationTable(multiNum) {
+  let total = "";
+  for (let i = 1; i <= 10; i++) {
+    
+    let multi = multiNum * i;
+
+    total  += `${multiNum} X ${i} = ${multi}`
+  }
+  return total;
+  
+}
+console.log(multiplicationTable(3));
+
 
 
 
@@ -63,11 +72,11 @@ multiplicationTable(3);
 function fizzBuzz(fizzNum, buzzNum, fizzBuzzNum) {
   for (let i = 1; i <= 15; i++) {
     // console.log(i);
-    if (i % 3 === 0 && i % 5 === 0) {
+    if (i % fizzNum === 0 && i % buzzNum === 0) {
       console.log("FizzBuzz");
-    } else if (i % 3 == 0) {
+    } else if (i % fizzNum == 0) {
       console.log("Fizz");
-    } else if (i % 5 == 0) {
+    } else if (i % buzzNum == 0) {
       console.log("Buzz");
     } else {
       console.log(i);
@@ -80,60 +89,63 @@ fizzBuzz(3, 5, 15);
 
 
 //task6
-let sum = 0;
 
 function sumArray(arr) {
+  let sum =  0;
   for (let i = 0; i < arr.length; i++) {
-  //  console.log(arr[i]);
-  sum = sum + arr[i]
+   
+    sum += arr[i]
   }
-  console.log(sum);
+  return sum
 }
-
-sumArray([1, 2, 3, 4])
+console.log(sumArray([1,2,3,4,5]));
 
 
 
 
 //task7
-let fTotal = 1
-function factorial(fNum) {
-  for (let i = 1; i <= fNum; i++) {
-  //  console.log(i);
-  fTotal = fTotal * i
+
+function factorial(factNum) {
+  let totalFact = 1;
+  for (let i = 1; i <= factNum; i++) {
+    
+    totalFact = totalFact * i
+    
   }
-  console.log(fTotal);
-  
+  return totalFact;
 }
-factorial(5);
+console.log(factorial(6));
+
 
 
 
 
 //task8;
-function  findMax(maxArr) {
+
+function findMax(maxArr) {
   let max = maxArr[0];
-   for (let i = 0; i < maxArr.length; i++) {
-    // console.log(maxArr[i]);
+
+  for (let i = 0; i < maxArr.length; i++) {
     if (maxArr[i] > max) {
       max = maxArr[i]
     }
-   }
-   console.log(max);
+  }
+  return max;
 }
-findMax([3, 7, 2, 8, 5])
+console.log(findMax([3,5,1,8,12]));
 
 
 
 
 //task9
-function reverseString(Rstr) {
-   
-    let newStr = Rstr.split("").reverse().join("");
-    console.log(newStr);
+
+function reverseString(str1) {
   
+  let revStr = str1.split("").reverse().join("")
+  return revStr
 }
-reverseString("hello")
+console.log(reverseString("hello"));
+
 
 
 
