@@ -47,16 +47,16 @@ console.log(twiceAsOld(55,30));
 
 
 //task4  Sum of positive
-function positiveSum(arr) {
-  let sum = 0;
-  for (let i = 0; i < arr.length; i++) {
-    if (arr[i] > 0) {
-        sum += arr[i]
-    }
-  }
-  return sum
-}
-console.log(positiveSum([-1,-2,3,-4,5,-6]));
+// function positiveSum(arr) {
+//   let sum = 0;
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] > 0) {
+//         sum += arr[i]
+//     }
+//   }
+//   return sum
+// }
+// console.log(positiveSum([-1,-2,3,-4,5,-6]));
 
 
 //task5 Given an array of integers, return a new array with each value doubled.
@@ -70,5 +70,62 @@ function maps(x){
 }
 console.log(maps([1,2,3,4]));
 
+
+
+
+
+//task6 
+function countBy(x, n) {
+  let z = [];
+  let total;
+
+  for (let i = 1; i <= n; i++) {
+    total = x * i
+    z.push(total)
+  }
+  return z
+}
+console.log(countBy(1,10)); 
+
+
+//task7
+function countSheeps(sheep) {
+   let totalTrue = 0;
+   for (let i = 0; i < sheep.length; i++) {
+    if (sheep[i]) {
+      totalTrue ++
+    }
+   }
+   return totalTrue
+}
+console.log(countSheeps([undefined,null,false,true,true]));
+
+
+
+//task8
+
+function positiveSum(arr) {
+  let sum = 0;
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] > 0) {
+      sum += arr[i]
+    }
+  }
+  return sum;
+}
+console.log(positiveSum([1,2,3,-4,5,-6]));
+
+
+
+//task9
+
+function monkeyCount(n) {
+  let newArr = [];
+  for (let i = 1; i <= n; i++) {
+      newArr.push(i)
+  }
+  return newArr
+}
+console.log(monkeyCount(6));
 
 

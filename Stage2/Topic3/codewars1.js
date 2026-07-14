@@ -12,8 +12,6 @@ function lowercaseCount(str) {
 }
 console.log(lowercaseCount(""));
 
-
-
 //task2  Return the day
 function whatday(num) {
   switch (num) {
@@ -46,8 +44,6 @@ function whatday(num) {
 }
 console.log(whatday(3));
 
-
-
 //task3 How old will I be in 2099?
 function calculateAge(birthYear, year) {
   let age = Math.abs(year - birthYear);
@@ -70,14 +66,11 @@ function calculateAge(birthYear, year) {
 
 console.log(calculateAge(2005, 2026));
 
-
-
 //task4  MakeUpperCase
 function makeUpperCase(str) {
   return str.toUpperCase();
 }
 console.log(makeUpperCase("hello"));
-
 
 //08.07.2026
 
@@ -87,8 +80,6 @@ function solution(str) {
   return arrStr;
 }
 console.log(solution("world"));
-
-
 
 //task6  Who ate the cookie?
 function cookie(x) {
@@ -102,8 +93,6 @@ function cookie(x) {
 }
 console.log(cookie(true));
 
-
-
 //task7  even or odd
 function evenOrOdd(number) {
   if (number % 2 === 0) {
@@ -113,8 +102,6 @@ function evenOrOdd(number) {
   }
 }
 console.log(evenOrOdd(4));
-
-
 
 //task8   Find the smallest integer in the array
 function findSmallestInt(arr) {
@@ -128,8 +115,6 @@ function findSmallestInt(arr) {
   return min;
 }
 console.log(findSmallestInt([2, 43, 56, 74, 3, 7, 853, 5]));
-
-
 
 //task10
 function findAverage(array) {
