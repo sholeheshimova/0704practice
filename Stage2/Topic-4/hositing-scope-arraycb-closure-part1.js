@@ -1,3 +1,4 @@
+// 30.07.2026
 //task1
 console.log(a);  //undefined sanki hoist olunur ve var a; yazilir yuxarda ona gore undefined
 var a = 5;  
@@ -258,6 +259,9 @@ console.log(mappedPeople);
 
 
 
+//31.07.2026
+
+//task1
 
 
 
