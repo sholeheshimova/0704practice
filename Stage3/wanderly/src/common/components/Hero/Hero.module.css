@@ -1,0 +1,389 @@
+.hero {
+  position: relative;
+  overflow: hidden;
+  padding: 75px 0 var(--section-padding);
+  background:
+    radial-gradient(
+      ellipse at 85% 45%,
+      rgba(91, 33, 182, 0.16),
+      transparent 42%
+    ),
+    var(--color-bg);
+}
+
+.container {
+  width: min(100% - 48px, var(--container-width));
+  margin-inline: auto;
+
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  align-items: center;
+  gap: 65px;
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 25px;
+
+  color: var(--color-accent);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.eyebrowIcon {
+  display: grid;
+  place-items: center;
+  width: 29px;
+  height: 29px;
+  border: 1px solid rgba(167, 139, 250, 0.35);
+  border-radius: var(--radius-full);
+  background: rgba(139, 92, 246, 0.12);
+  font-size: 15px;
+}
+
+.title {
+  max-width: 650px;
+  color: var(--color-text);
+  font-size: clamp(42px, 4.5vw, 65px);
+  line-height: 1.12;
+  font-weight: 800;
+  letter-spacing: -2px;
+}
+
+.title span {
+  display: block;
+  margin-top: 8px;
+  color: var(--color-primary-light);
+}
+
+.description {
+  max-width: 490px;
+  margin-top: 25px;
+
+  color: var(--color-text-secondary);
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 32px;
+}
+
+.primaryBtn,
+.secondaryBtn {
+  min-height: 52px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  padding: 0 21px;
+  border-radius: var(--radius-md);
+  font-size: 13px;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.primaryBtn {
+  color: var(--color-text);
+  background: var(--gradient-primary);
+  box-shadow: var(--shadow-primary);
+}
+
+.primaryBtn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 35px rgba(124, 58, 237, 0.45);
+}
+
+.primaryBtn span {
+  font-size: 18px;
+}
+
+.secondaryBtn {
+  color: var(--color-text);
+  border: 1px solid var(--color-border);
+  background: rgba(255, 255, 255, 0.025);
+}
+
+.secondaryBtn:hover {
+  border-color: var(--color-primary);
+  background: rgba(139, 92, 246, 0.1);
+}
+
+.playIcon {
+  font-size: 11px;
+  color: var(--color-accent);
+}
+
+.stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 38px;
+  margin-top: 55px;
+  padding-top: 28px;
+  border-top: 1px solid var(--color-border);
+}
+
+.stat h3 {
+  color: var(--color-text);
+  font-size: 25px;
+  font-weight: 750;
+}
+
+.stat p {
+  margin-top: 8px;
+  color: var(--color-text-muted);
+  font-size: 12px;
+}
+
+/* Image area */
+.visual {
+  position: relative;
+  width: 100%;
+  max-width: 490px;
+  justify-self: end;
+  isolation: isolate;
+}
+
+.imageGlow {
+  position: absolute;
+  z-index: -1;
+  inset: 10% -8% -5% 10%;
+  border-radius: 50%;
+  background: rgba(124, 58, 237, 0.25);
+  filter: blur(75px);
+}
+
+.heroImage {
+  width: 100%;
+  height: 550px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 190px 190px 24px 24px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.imageTag {
+  position: absolute;
+  left: -35px;
+  bottom: 35px;
+
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  padding: 17px 20px;
+
+  background: rgba(16, 19, 43, 0.92);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  backdrop-filter: blur(15px);
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.25);
+}
+
+.locationIcon {
+  color: var(--color-primary-light);
+  font-size: 27px;
+}
+
+.imageTag p,
+.floatingBadge p {
+  color: var(--color-text-secondary);
+  font-size: 11px;
+  margin-bottom: 6px;
+}
+
+.imageTag h3 {
+  color: var(--color-text);
+  font-size: 14px;
+}
+
+.floatingBadge {
+  position: absolute;
+  top: 65px;
+  right: -28px;
+
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 15px 18px;
+
+  background: rgba(16, 19, 43, 0.94);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  backdrop-filter: blur(15px);
+}
+
+.floatingBadge > span {
+  display: grid;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 12px;
+  background: rgba(139, 92, 246, 0.18);
+  color: var(--color-primary-light);
+  font-size: 21px;
+}
+
+.floatingBadge strong {
+  color: var(--color-text);
+  font-size: 12px;
+}
+
+
+.eyebrowIcon,
+.locationIcon,
+.playIcon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.eyebrowIcon i {
+  font-size: 14px;
+}
+
+.primaryBtn > i {
+  font-size: 13px;
+  transition: transform 0.3s ease;
+}
+
+.primaryBtn:hover > i {
+  transform: translate(3px, -3px);
+}
+
+.playIcon i {
+  font-size: 12px;
+}
+
+.locationIcon i {
+  font-size: 16px;
+}
+
+/* Tablet */
+@media (max-width: 1050px) {
+  .container {
+    grid-template-columns: 1fr 0.85fr;
+    gap: 35px;
+  }
+
+  .title {
+    font-size: clamp(38px, 4.5vw, 52px);
+  }
+
+  .heroImage {
+    height: 460px;
+  }
+
+  .stats {
+    gap: 22px;
+  }
+
+  .imageTag {
+    left: -15px;
+  }
+
+  .floatingBadge {
+    right: -10px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 760px) {
+  .hero {
+    padding-top: 50px;
+  }
+
+  .container {
+    grid-template-columns: 1fr;
+    gap: 55px;
+  }
+
+  .title {
+    max-width: 580px;
+    font-size: clamp(40px, 8vw, 58px);
+    letter-spacing: -1.5px;
+  }
+
+  .description {
+    font-size: 15px;
+  }
+
+  .stats {
+    gap: 28px;
+    margin-top: 40px;
+  }
+
+  .stat h3 {
+    font-size: 22px;
+  }
+
+  .visual {
+    width: min(100% - 20px, 440px);
+    justify-self: center;
+  }
+
+  .heroImage {
+    height: 480px;
+    border-radius: 160px 160px 22px 22px;
+  }
+}
+
+@media (max-width: 420px) {
+  .container {
+    width: calc(100% - 32px);
+  }
+
+  .title {
+    font-size: 39px;
+  }
+
+  .buttons {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .primaryBtn,
+  .secondaryBtn {
+    width: 100%;
+  }
+
+  .stats {
+    justify-content: space-between;
+    gap: 12px;
+  }
+
+  .stat h3 {
+    font-size: 19px;
+  }
+
+  .stat p {
+    font-size: 10px;
+  }
+
+  .heroImage {
+    height: 390px;
+  }
+
+  .imageTag {
+    left: -8px;
+    bottom: 20px;
+    padding: 13px;
+  }
+
+  .floatingBadge {
+    right: -8px;
+    top: 35px;
+    padding: 12px;
+  }
+}

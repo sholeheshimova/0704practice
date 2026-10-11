@@ -1,0 +1,29 @@
+:root {
+  /* Background colors */
+  --color-bg: #080a1c;
+  --color-bg-secondary: #10132b;
+  --color-bg-card: #151a35;
+
+  /* Brand colors */
+  --color-primary: #8b5cf6;
+  --color-primary-light: #a78bfa;
+  --color-secondary: #6366f1;
+  --color-accent: #c4b5fd;
+
+  /* Text colors */
+  --color-text: #ffffff;
+  --color-text-secondary: #a6a8c3;
+  --color-text-muted: #737797;
+
+  /* Borders and effects */
+  --color-border: rgba(255, 255, 255, 0.08);
+  --color-overlay: rgba(8, 10, 28, 0.88);
+
+  /* Gradients */
+  --gradient-primary: linear-gradient(135deg, #6366f1, #9333ea);
+
+  --gradient-glow: linear-gradient(135deg, #8b5cf6, #4f46e5);
+
+  /* Shadows */
+  --shadow-primary: 0 8px 28px rgba(124, 58, 237, 0.35);
+}
