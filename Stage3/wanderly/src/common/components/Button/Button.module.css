@@ -1,0 +1,25 @@
+
+.detailsBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 12px 18px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #7654f6, #5935d8);
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: all 0.3s ease;
+}
+
+.detailsBtn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(118, 84, 246, 0.3);
+}
+
+.detailsBtn i {
+  font-size: 12px;
+}

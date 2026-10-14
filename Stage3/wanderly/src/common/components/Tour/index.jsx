@@ -1,4 +1,6 @@
 import styles from "./Tour.module.css";
+import Button from "../Button";
+import Card from "../Card";
 
 const tours = [
   {
@@ -64,65 +66,23 @@ function Tour() {
             </a>
           </div>
 
-          <div className={styles.tourGrid}>
-            {tours.map((tour) => (
-              <article className={styles.card} key={tour.id}>
-                <div className={styles.imageWrapper}>
-                  <img
-                    src={tour.image}
-                    alt={tour.title}
-                    className={styles.tourImage}
-                    loading="lazy"
-                  />
+          
+<div className={styles.tourGrid}>
+  {tours.map((tour) => (
+    <Card
+      key={tour.id}
+      country={tour.country}
+      title={tour.title}
+      image={tour.image}
+      rating={tour.rating}
+      reviews={tour.reviews}
+      duration={tour.duration}
+      price={tour.price}
+      tag={tour.tag}
+    />
+  ))}
+</div>
 
-                  <span className={styles.tag}>{tour.tag}</span>
-
-                  <button
-                    type="button"
-                    className={styles.favorite}
-                    aria-label={`Save ${tour.title} to favorites`}
-                  >
-                    <i className="fa-regular fa-heart"></i>
-                  </button>
-                </div>
-
-                <div className={styles.cardContent}>
-                  <p className={styles.country}>
-                    <span>
-                      <i className="fa-solid fa-location-dot"></i>
-                    </span>
-                    {tour.country}
-                  </p>
-
-                  <h3 className={styles.cardTitle}>{tour.title}</h3>
-
-                  <div className={styles.rating}>
-                    <span>
-                      <i className="fa-solid fa-star"></i>
-                    </span>
-                    {tour.rating}
-                    <span className={styles.reviews}>
-                      ({tour.reviews} reviews)
-                    </span>
-                  </div>
-
-                  <div className={styles.cardFooter}>
-                    <div>
-                      <p className={styles.duration}>{tour.duration} trip</p>
-                      <p className={styles.price}>
-                        ${tour.price}
-                        <span> / person</span>
-                      </p>
-                    </div>
-
-                    <a href={`#tour-${tour.id}`} className={styles.detailsBtn}>
-                      Details <i className="fa-solid fa-arrow-up-right-from-square"></i>
-                    </a>
-                  </div>
-                </div>
-              </article>
-            ))}
-          </div>
         </div>
       </section>
     </>
